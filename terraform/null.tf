@@ -16,3 +16,9 @@ resource "null_resource" "helloWorld3" {
     command = "echo ${random_pet.name.id}"
   }
 }
+
+resource "null_resource" "helloWorld4" {
+  provisioner "local-exec" {
+    command = "echo ${random_pet.name.id}"
+  }
+}
